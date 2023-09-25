@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100vh;
+    overflow-y: auto;
+}
+h1{
+    color: #424242;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    /* background-color: #212121; */
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x:auto;
+    height:min-content;
+    width: 100%;
+    background-color: #212121;
+    padding: 1.5em 18rem 1.5em 18rem;
+}
+.lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: black;
+    flex-direction: column;
+    width: 100%;
+}
+.main-input{
+    width: 60%;
+    height: fit-content;
+    overflow-y: hidden;
+    background-color: #212121;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-input{
+    outline: none;
+    border: none;
+    padding: 20px 10px 20px 20px;
+    border-radius: 10px;
+    text-align: start;
+    color: white;
+}
+.main-input::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+input::placeholder{
+    color: white;
+}
+.fa-regular{
+    margin-left: 10px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+span{
+    font-size: 0.875rem;
+}
+.version{
+    text-decoration: underline;
+    color: white;
+    font-weight: 600;
+}
+#submit{
+    background: transparent;
+    border: none;
+}
+.foot{
+    margin-top: 1rem;
+}
+/* Menu Bar after click */
+#newchat{
+    border: 1px solid rgba(255,255,255,.5);
+    background: transparent;
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+#newchat a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+/* Mobile Screen */
+@media screen and (min-width: 250px) and (max-width:576px)
+{
+    .main-input{
+        padding:10px;
+        width: 80%;
+    }
+    #newchat{
+        padding: 8px;
+    }
+    span{
+        text-align:start;
+    }
+    .copyright{
+        width: 80%;
+    }
+    .middle{
+        padding: 1em 2rem 1em 2rem;
+    }
+}
+/* Media Query for tablet */
+@media screen and (min-width: 576px) and (max-width:1180px)
+{
+    .middle{
+        padding: 1em 10rem 1em 10rem;
+    }
+}
